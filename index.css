@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #A376A2 !important;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding-top: 70px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #6B3F69 !important;
+}
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #A376A2 !important;
+}
+
+/* HERO SECTION */
+.hero img {
+    width: 100%;
+    height: 70vh;            
+    object-fit: cover;
+}
+.hero-text {
+    color: white;
+    text-align: center;
+}
+.hero-text a {
+    padding: 10px 25px;
+    font-weight: 600;
+    color: #fff;
+}
+.hero-text a:hover {
+    background-color:  #FF7A00;
+}
+.afterp{
+    color:black;
+}
+
+.afterbanner{
+    background-color: #ddc3c385;
+    box-shadow: 12px 10px 10px rgba(0, 0, 0, 0.26);
+}
+/* ICON SECTION */
+.imx img {
+    transition: 0.3s;
+    width: 100%;
+    max-width: 150px;       
+    height: auto;
+}
+.imx img:hover {
+    transform: scale(1.08);
+}
+
+/* CARDS */
+.card {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-radius: none;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;    
+    border-radius: 12px 12px 0 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card-body p {
+    flex-grow: 1;  
+}
+
+.card-body .bannerbtn {
+    margin-top: auto;  
+}
+
+     
+
+/* GALLERY */
+.gallery-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;     
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.gallery-img:hover {
+    transform: scale(1.06);
+}
+
+.b2 {
+    padding: 10px 25px;
+    
+    
+}
+.cardh2{
+    color:  white;
+    
+} 
+    
+
+/* DESSERT SECTION */
+.dh {
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.dhimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.dhbt {
+    /* color: white; */
+    padding: 12px 25px;
+    font-size: 15px;
+}
+/* .dhbt:hover{
+    background-color: #FF7A00;
+} */
+
+
+#facebook{
+    font-size: 30px;
+    margin-top: 120px;
+    color: white;
+}
+/* recipe page */
+.hero video{
+    width: 100%;
+    height: 70vh;            
+    object-fit: cover;
+}
+.recipt{
+    color: white;
+
+    padding-top: 50px;
+}
+.tips{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+
+}
+.direction{
+      background-color: #ddc3c385;
+    box-shadow: 12px 10px 10px rgba(0, 0, 0, 0.26);
+}
+.d1{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+
+}
+
+.s1{
+    font-size: 30px;
+}
+
+.s3{
+    padding-bottom: 30px;
+}
+
+.rpimg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    
+}
+.rh3{
+    padding-left: 25px;
+}
+.formpage{
+      background-color: #ddc3c385; 
+}
+
+.garellyh{
+    color: white;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.line{
+    color:white;
+    border: 5px solid;
+}
+
+.gimg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gimg:hover{
+    transform: scale(1.06);
+}
+/* Award page */
+body {
+    background: #f9f9f9;
+}
+.award-card {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.award-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.award-icon {
+    font-size: 50px;
+    color: #d4af37; /* golden */
+}
+/* Award page */
+
+
+.award-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.award-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.award-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    background-color: #6B3F69;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+/* About page */
+.hero {
+    height: 70vh;
+}
+
+.hero-banner {
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.bannerbtn{
+    background-color: #A376A2;
+}
+.bannerbtn:hover{
+    border: 4px solid #A376A2;
+    background-color: transparent !important;
+    color: black;
+    border-radius: 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.hero-para {
+    
+    max-width: 700px;
+    margin: 20px auto 0;
+    line-height: 1.8;
+}
+
+.our {
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+/* Accordion container */
+.accordion,
+.accordion-item {
+    background-color: #ddc3c385;
+    box-shadow: 12px 10px 10px rgba(0, 0, 0, 0.26);
+}
+
+/* Default button */
+.accordion-button {
+    background-color: #6B3F69;
+    color: #fff;
+    box-shadow: 12px 10px 10px rgba(0, 0, 0, 0.26);
+}
+
+/* CLICK / OPEN state (white remove) */
+.accordion-button:not(.collapsed) {
+    background-color: #ddc3c385 !important;
+    color: #000;
+    box-shadow: none;
+}
+
+/* Focus outline remove */
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+/* Body background */
+.accordion-body {
+    background-color: #ddc3c385;
+}
+
+.accordion-collapse.show .accordion-body {
+    border-top: 2px solid #6B3F69;
+}
+
+/* Image styling */
+.serviceimg {
+    width: 100%;
+    height: 380px;          /* FIXED & NEAT SIZE */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+}
+
+
+
+/* catering page */
+.cateringtex{
+    text-align: center;
+    color: #FF7A00;
+}
+.cateringpara{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Award page */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFF7ED;
+    color: #333;
+    margin:0;
+}
+
+/* HERO */
+.hero-awards{
+    background: url('imgs/Awards\ banner.jpg') center/cover no-repeat;
+    height: 300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-text h1{
+    color:#fff;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    color:#fff;
+    
+}
+
+/* INTRO */
+.intro-text{
+    font-size: 1.1rem;
+    line-height:1.7;
+    color:#555;
+    max-width: 800px;
+    margin:auto;
+}
+
+/* AWARD CARDS */
+.award-card{
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+    text-align:center;
+    transition: 0.3s;
+}
+
+.award-card:hover{
+    transform: translateY(-5px);
+}
+
+.award-img{
+    width:80px;
+}
+
+.award-card h3{
+    margin-top:10px;
+    margin-bottom:5px;
+    font-weight:700;
+    color:#222;
+}
+
+.award-year{
+    display:block;
+    color:#FF7A00;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.award-desc{
+    color:#555;
+    font-size: 1rem;
+    line-height:1.6;
+}
+/* catering page */
+/* HERO */
+.hero-catering{
+    background: url('imgs/catering\ bannner.jpg') center/cover no-repeat;
+    height: 300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-text h1{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    color:#fff;
+}
+
+/* INTRO */
+.intro-text{
+    line-height:1.7;
+    max-width: 800px;
+    margin:auto;
+    text-align:center;
+}
+
+/* CATERING CARDS */
+.catering-card{
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:0.3s;
+}
+
+.catering-card:hover{
+    transform: translateY(-5px);
+}
+
+.catering-img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px 12px 0 0;
+}
+
+.catering-card h3{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.catering-card p{
+    line-height:1.6;
+}
+
+.catering-card .btn{
+    margin-top:10px;
+}
+/* sitemap */
+.sitemap-links li {
+    margin-bottom: 10px;
+}
+
+.sitemap-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sitemap-links a:hover {
+    color: #b02a37;
+    text-decoration: underline;
+}

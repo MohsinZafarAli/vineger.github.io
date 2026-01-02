@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="navbar">
+    </div>
+   
+    <section class="hero-catering text-center">
+        <div class="hero-text">
+            <h1>Professional Catering Services</h1>
+            <p>Delicious meals, impeccable service, unforgettable events</p>
+        </div>
+    </section>
+    
+    <!-- INTRO -->
+    <div class="container my-5">
+        <p class="intro-text text-center">
+            At Vinegar Food, we provide catering for all occasions — weddings, corporate events, parties, and private gatherings.  
+            Our team ensures fresh food, hygienic preparation, and flawless presentation.
+        </p>
+    </div>
+    
+    <!-- CATERING PACKAGES CARDS -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 cardh2">Our Catering Packages</h2>
+        <div class="row g-4">
+    
+            <div class="col-md-6 col-lg-4">
+                <div class="catering-card p-4">
+                    <img src="imgs/catering1.jpg" alt="Regular Catering" class="catering-img mb-3">
+                    <h3>Regular Catering</h3>
+                    <p>Perfect for small events, birthdays, and family gatherings. .</p>
+                    <a href="#" class="btn bannerbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</a>
+                </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-4">
+                <div class="catering-card p-4">
+                    <img src="imgs/catering2.webp" alt="Lunch Catering" class="catering-img mb-3">
+                    <h3>Lunch Catering</h3>
+                    <p>Delicious, balanced lunch menus for corporate events or large gatherings.</p>
+                    <a href="#" class="btn bannerbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</a>
+                </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-4">
+                <div class="catering-card p-4">
+                    <img src="imgs/catering 3.webp" alt="Snacks & Desserts" class="catering-img mb-3">
+                    <h3>Snacks & Desserts</h3>
+                    <p>Tasty snacks and desserts to delight your guests and make the event memorable.</p>
+                    <a href="#" class="btn bannerbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</a>
+                </div>
+            </div>
+            
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h5 class="modal-title">Place Your Booking</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <div class="modal-body">
+  
+          <!-- Order Form -->
+          <form id="orderForm">
+  
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control"
+                placeholder="Enter your name"
+                pattern="[A-Za-z ]{3,}"
+                title="Only letters allowed (min 3 characters)"
+                required>
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control"
+                placeholder="03XXXXXXXXX"
+                pattern="03[0-9]{9}"
+                title="Enter valid Pakistani number e.g. 03XXXXXXXXX"
+                required>
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Product Name</label>
+              <input type="text" class="form-control"
+                placeholder="Product name"
+                required>
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Quantity</label>
+              <input type="number" class="form-control"
+                min="1" value="1"
+                required>
+            </div>
+  
+            <button type="submit" class="btn w-100 bannerbtn">
+              Submit Order
+            </button>
+  
+          </form>
+  
+          <!-- Thank You Message -->
+          <div id="thankYouMsg" class="text-center" style="display:none;">
+            <h4 class="text-success">✅ Thank You!</h4>
+            <p>Your booking has been placed successfully.</p>
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <!-- <script>
+  document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // form submit stop
+  
+      // form hide
+      document.getElementById("orderForm").style.display = "none";
+  
+      // thank you message show
+      document.getElementById("thankYouMsg").style.display = "block";
+  });
+  </script> -->
+  <script>
+    const modal = document.getElementById('exampleModal');
+    const form = document.getElementById("orderForm");
+    const thankYou = document.getElementById("thankYouMsg");
+  
+    // Form submit hone par
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      form.style.display = "none";
+      thankYou.style.display = "block";
+    });
+  
+    // Jab bhi modal dubara open ho
+    modal.addEventListener('shown.bs.modal', function () {
+      form.reset();                  // form clear
+      form.style.display = "block";  // form show
+      thankYou.style.display = "none"; // thank you hide
+    });
+  </script>
+  
+<div id="footer"></div>
+
+    
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
